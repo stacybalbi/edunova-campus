@@ -21,6 +21,9 @@ import ProgressPage from "@/pages/ProgressPage";
 import GradesPage from "@/pages/GradesPage";
 import AdminUsersPage from "@/pages/admin/AdminUsersPage";
 import AdminCoursesPage from "@/pages/admin/AdminCoursesPage";
+import AdminCoursesManagePage from "@/pages/admin/AdminCoursesManagePage";
+import CourseManagePage from "@/pages/admin/CourseManagePage";
+import TeacherCoursesPage from "@/pages/teacher/TeacherCoursesPage";
 import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -53,9 +56,12 @@ const App = () => (
               <Route path="/admin" element={<ProtectedRoute allowedRoles={['ADMIN']}><DashboardPage /></ProtectedRoute>} />
               <Route path="/admin/users" element={<ProtectedRoute allowedRoles={['ADMIN']}><AdminUsersPage /></ProtectedRoute>} />
               <Route path="/admin/courses" element={<ProtectedRoute allowedRoles={['ADMIN']}><AdminCoursesPage /></ProtectedRoute>} />
+              <Route path="/admin/courses/manage" element={<ProtectedRoute allowedRoles={['ADMIN']}><AdminCoursesManagePage /></ProtectedRoute>} />
+              <Route path="/admin/courses/:id/manage" element={<ProtectedRoute allowedRoles={['ADMIN']}><CourseManagePage /></ProtectedRoute>} />
               
               {/* Teacher routes */}
-              <Route path="/teacher/courses" element={<ProtectedRoute allowedRoles={['TEACHER', 'ADMIN']}><CoursesPage /></ProtectedRoute>} />
+              <Route path="/teacher/courses" element={<ProtectedRoute allowedRoles={['TEACHER', 'ADMIN']}><TeacherCoursesPage /></ProtectedRoute>} />
+              <Route path="/teacher/courses/:id/manage" element={<ProtectedRoute allowedRoles={['TEACHER', 'ADMIN']}><CourseManagePage /></ProtectedRoute>} />
             </Route>
 
             <Route path="*" element={<NotFound />} />
