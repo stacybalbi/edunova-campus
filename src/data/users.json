@@ -1,0 +1,62 @@
+[
+  {
+    "id": "user-001",
+    "name": "Admin User",
+    "email": "admin@edunova.com",
+    "passwordHash": "admin123",
+    "role": "ADMIN",
+    "isActive": true,
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=admin",
+    "createdAt": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "user-002",
+    "name": "María García",
+    "email": "maria.garcia@edunova.com",
+    "passwordHash": "teacher123",
+    "role": "TEACHER",
+    "isActive": true,
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=maria",
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "user-003",
+    "name": "Carlos Rodríguez",
+    "email": "carlos.rodriguez@edunova.com",
+    "passwordHash": "teacher123",
+    "role": "TEACHER",
+    "isActive": true,
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=carlos",
+    "createdAt": "2024-02-01T00:00:00Z"
+  },
+  {
+    "id": "user-004",
+    "name": "Ana Martínez",
+    "email": "ana.martinez@student.com",
+    "passwordHash": "student123",
+    "role": "STUDENT",
+    "isActive": true,
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=ana",
+    "createdAt": "2024-03-01T00:00:00Z"
+  },
+  {
+    "id": "user-005",
+    "name": "Pedro López",
+    "email": "pedro.lopez@student.com",
+    "passwordHash": "student123",
+    "role": "STUDENT",
+    "isActive": true,
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=pedro",
+    "createdAt": "2024-03-15T00:00:00Z"
+  },
+  {
+    "id": "user-006",
+    "name": "Laura Sánchez",
+    "email": "laura.sanchez@student.com",
+    "passwordHash": "student123",
+    "role": "STUDENT",
+    "isActive": false,
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=laura",
+    "createdAt": "2024-04-01T00:00:00Z"
+  }
+]

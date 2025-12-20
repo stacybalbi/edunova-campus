@@ -1,0 +1,44 @@
+[
+  {
+    "id": "enrollment-001",
+    "studentId": "user-004",
+    "courseId": "course-001",
+    "enrolledAt": "2024-03-05T00:00:00Z"
+  },
+  {
+    "id": "enrollment-002",
+    "studentId": "user-004",
+    "courseId": "course-003",
+    "enrolledAt": "2024-03-10T00:00:00Z"
+  },
+  {
+    "id": "enrollment-003",
+    "studentId": "user-004",
+    "courseId": "course-004",
+    "enrolledAt": "2024-04-01T00:00:00Z"
+  },
+  {
+    "id": "enrollment-004",
+    "studentId": "user-005",
+    "courseId": "course-001",
+    "enrolledAt": "2024-03-20T00:00:00Z"
+  },
+  {
+    "id": "enrollment-005",
+    "studentId": "user-005",
+    "courseId": "course-002",
+    "enrolledAt": "2024-04-05T00:00:00Z"
+  },
+  {
+    "id": "enrollment-006",
+    "studentId": "user-005",
+    "courseId": "course-005",
+    "enrolledAt": "2024-04-10T00:00:00Z"
+  },
+  {
+    "id": "enrollment-007",
+    "studentId": "user-006",
+    "courseId": "course-001",
+    "enrolledAt": "2024-04-15T00:00:00Z"
+  }
+]

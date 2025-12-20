@@ -1,0 +1,110 @@
+[
+  {
+    "id": "lesson-001",
+    "courseId": "course-001",
+    "title": "Introducción a React y JSX",
+    "content": "# Bienvenido a React\n\nReact es una biblioteca de JavaScript para construir interfaces de usuario. Fue desarrollada por Facebook y es una de las herramientas más populares en el desarrollo web moderno.\n\n## ¿Qué es JSX?\n\nJSX es una extensión de sintaxis para JavaScript que nos permite escribir HTML dentro de JavaScript. Aunque parece HTML, en realidad se compila a llamadas de funciones JavaScript.\n\n```jsx\nconst element = <h1>¡Hola, mundo!</h1>;\n```\n\n## Configuración del entorno\n\nPara comenzar con React, necesitamos Node.js instalado. Luego podemos crear un proyecto con:\n\n```bash\nnpx create-react-app mi-app\ncd mi-app\nnpm start\n```\n\n## Conceptos clave\n\n- **Componentes**: Bloques reutilizables de UI\n- **Props**: Datos que se pasan a los componentes\n- **Estado**: Datos que pueden cambiar con el tiempo",
+    "videoUrl": "https://example.com/videos/react-intro",
+    "orderNumber": 1,
+    "duration": "45 min"
+  },
+  {
+    "id": "lesson-002",
+    "courseId": "course-001",
+    "title": "Componentes y Props",
+    "content": "# Componentes en React\n\nLos componentes son la base de cualquier aplicación React. Son piezas de código reutilizables que representan una parte de la interfaz de usuario.\n\n## Tipos de componentes\n\n### Componentes funcionales\n\n```jsx\nfunction Saludo(props) {\n  return <h1>Hola, {props.nombre}</h1>;\n}\n```\n\n### Componentes de clase (legacy)\n\n```jsx\nclass Saludo extends React.Component {\n  render() {\n    return <h1>Hola, {this.props.nombre}</h1>;\n  }\n}\n```\n\n## Props\n\nLas props (propiedades) son la forma de pasar datos de un componente padre a un componente hijo.\n\n```jsx\n<Saludo nombre=\"María\" />\n```\n\n## Composición\n\nLos componentes pueden contener otros componentes, creando una jerarquía de UI.",
+    "videoUrl": "https://example.com/videos/react-components",
+    "orderNumber": 2,
+    "duration": "60 min"
+  },
+  {
+    "id": "lesson-003",
+    "courseId": "course-001",
+    "title": "Estado y Hooks",
+    "content": "# Estado en React\n\nEl estado es un objeto que contiene datos que pueden cambiar durante el ciclo de vida del componente.\n\n## useState Hook\n\nEl hook más básico para manejar estado:\n\n```jsx\nimport { useState } from 'react';\n\nfunction Contador() {\n  const [count, setCount] = useState(0);\n  \n  return (\n    <div>\n      <p>Has clickeado {count} veces</p>\n      <button onClick={() => setCount(count + 1)}>\n        Incrementar\n      </button>\n    </div>\n  );\n}\n```\n\n## useEffect Hook\n\nPara efectos secundarios como llamadas a APIs:\n\n```jsx\nimport { useEffect, useState } from 'react';\n\nfunction Usuario() {\n  const [user, setUser] = useState(null);\n  \n  useEffect(() => {\n    fetch('/api/user')\n      .then(res => res.json())\n      .then(data => setUser(data));\n  }, []);\n  \n  return user ? <p>{user.name}</p> : <p>Cargando...</p>;\n}\n```",
+    "videoUrl": "https://example.com/videos/react-state",
+    "orderNumber": 3,
+    "duration": "75 min"
+  },
+  {
+    "id": "lesson-004",
+    "courseId": "course-001",
+    "title": "Manejo de Eventos",
+    "content": "# Eventos en React\n\nReact maneja los eventos de forma similar al HTML, pero con algunas diferencias sintácticas.\n\n## Sintaxis de eventos\n\n```jsx\n// HTML\n<button onclick=\"handleClick()\">\n\n// React\n<button onClick={handleClick}>\n```\n\n## Eventos comunes\n\n- `onClick` - Click del mouse\n- `onChange` - Cambio en inputs\n- `onSubmit` - Envío de formularios\n- `onKeyDown` - Tecla presionada\n- `onMouseOver` - Mouse sobre elemento\n\n## Ejemplo de formulario\n\n```jsx\nfunction Formulario() {\n  const [nombre, setNombre] = useState('');\n  \n  const handleSubmit = (e) => {\n    e.preventDefault();\n    console.log('Nombre:', nombre);\n  };\n  \n  return (\n    <form onSubmit={handleSubmit}>\n      <input\n        type=\"text\"\n        value={nombre}\n        onChange={(e) => setNombre(e.target.value)}\n      />\n      <button type=\"submit\">Enviar</button>\n    </form>\n  );\n}\n```",
+    "videoUrl": "https://example.com/videos/react-events",
+    "orderNumber": 4,
+    "duration": "50 min"
+  },
+  {
+    "id": "lesson-005",
+    "courseId": "course-002",
+    "title": "Tipos Avanzados en TypeScript",
+    "content": "# Tipos Avanzados\n\nTypeScript ofrece un sistema de tipos muy potente que permite expresar patrones complejos.\n\n## Union Types\n\n```typescript\ntype Result = string | number;\n\nfunction format(value: Result): string {\n  if (typeof value === 'string') {\n    return value.toUpperCase();\n  }\n  return value.toFixed(2);\n}\n```\n\n## Intersection Types\n\n```typescript\ntype Person = { name: string };\ntype Employee = { employeeId: number };\ntype Staff = Person & Employee;\n\nconst staff: Staff = {\n  name: 'Juan',\n  employeeId: 123\n};\n```\n\n## Literal Types\n\n```typescript\ntype Direction = 'north' | 'south' | 'east' | 'west';\ntype Status = 200 | 404 | 500;\n```",
+    "videoUrl": "https://example.com/videos/ts-advanced-types",
+    "orderNumber": 1,
+    "duration": "55 min"
+  },
+  {
+    "id": "lesson-006",
+    "courseId": "course-002",
+    "title": "Genéricos en TypeScript",
+    "content": "# Genéricos\n\nLos genéricos permiten crear componentes reutilizables que funcionan con diferentes tipos.\n\n## Funciones genéricas\n\n```typescript\nfunction identity<T>(arg: T): T {\n  return arg;\n}\n\nconst num = identity<number>(42);\nconst str = identity<string>('hello');\n```\n\n## Interfaces genéricas\n\n```typescript\ninterface Box<T> {\n  value: T;\n}\n\nconst numberBox: Box<number> = { value: 42 };\nconst stringBox: Box<string> = { value: 'hello' };\n```\n\n## Restricciones de tipo\n\n```typescript\ninterface Lengthwise {\n  length: number;\n}\n\nfunction logLength<T extends Lengthwise>(arg: T): T {\n  console.log(arg.length);\n  return arg;\n}\n```",
+    "videoUrl": "https://example.com/videos/ts-generics",
+    "orderNumber": 2,
+    "duration": "65 min"
+  },
+  {
+    "id": "lesson-007",
+    "courseId": "course-002",
+    "title": "Utility Types",
+    "content": "# Utility Types\n\nTypeScript incluye varios tipos de utilidad para transformaciones comunes.\n\n## Partial<T>\n\nHace todas las propiedades opcionales:\n\n```typescript\ninterface User {\n  name: string;\n  email: string;\n}\n\ntype PartialUser = Partial<User>;\n// { name?: string; email?: string; }\n```\n\n## Required<T>\n\nHace todas las propiedades requeridas:\n\n```typescript\ntype RequiredUser = Required<PartialUser>;\n```\n\n## Pick<T, K>\n\nSelecciona propiedades específicas:\n\n```typescript\ntype UserName = Pick<User, 'name'>;\n// { name: string; }\n```\n\n## Omit<T, K>\n\nExcluye propiedades específicas:\n\n```typescript\ntype UserWithoutEmail = Omit<User, 'email'>;\n// { name: string; }\n```",
+    "videoUrl": "https://example.com/videos/ts-utility-types",
+    "orderNumber": 3,
+    "duration": "50 min"
+  },
+  {
+    "id": "lesson-008",
+    "courseId": "course-002",
+    "title": "Decoradores",
+    "content": "# Decoradores en TypeScript\n\nLos decoradores son una forma de añadir anotaciones y metadatos a clases y sus miembros.\n\n## Decoradores de clase\n\n```typescript\nfunction sealed(constructor: Function) {\n  Object.seal(constructor);\n  Object.seal(constructor.prototype);\n}\n\n@sealed\nclass Greeter {\n  greeting: string;\n  constructor(message: string) {\n    this.greeting = message;\n  }\n}\n```\n\n## Decoradores de método\n\n```typescript\nfunction log(target: any, key: string, descriptor: PropertyDescriptor) {\n  const original = descriptor.value;\n  descriptor.value = function(...args: any[]) {\n    console.log(`Calling ${key} with:`, args);\n    return original.apply(this, args);\n  };\n  return descriptor;\n}\n\nclass Calculator {\n  @log\n  add(a: number, b: number) {\n    return a + b;\n  }\n}\n```",
+    "videoUrl": "https://example.com/videos/ts-decorators",
+    "orderNumber": 4,
+    "duration": "70 min"
+  },
+  {
+    "id": "lesson-009",
+    "courseId": "course-003",
+    "title": "Introducción a Python y Pandas",
+    "content": "# Python para Data Science\n\nPython es el lenguaje más popular para análisis de datos y machine learning.\n\n## Instalación del entorno\n\n```bash\npip install pandas numpy matplotlib jupyter\n```\n\n## Pandas Basics\n\n```python\nimport pandas as pd\n\n# Crear un DataFrame\ndf = pd.DataFrame({\n    'nombre': ['Ana', 'Luis', 'María'],\n    'edad': [25, 30, 28],\n    'ciudad': ['Madrid', 'Barcelona', 'Valencia']\n})\n\nprint(df)\n```\n\n## Operaciones básicas\n\n```python\n# Seleccionar columnas\ndf['nombre']\n\n# Filtrar filas\ndf[df['edad'] > 26]\n\n# Estadísticas\ndf.describe()\n```",
+    "videoUrl": "https://example.com/videos/python-pandas",
+    "orderNumber": 1,
+    "duration": "60 min"
+  },
+  {
+    "id": "lesson-010",
+    "courseId": "course-003",
+    "title": "NumPy para cálculos numéricos",
+    "content": "# NumPy\n\nNumPy es la base de la computación científica en Python.\n\n## Arrays de NumPy\n\n```python\nimport numpy as np\n\n# Crear arrays\narr = np.array([1, 2, 3, 4, 5])\nmatrix = np.array([[1, 2], [3, 4]])\n\n# Arrays especiales\nzeros = np.zeros((3, 3))\nones = np.ones((2, 4))\nrandom = np.random.rand(5)\n```\n\n## Operaciones vectorizadas\n\n```python\na = np.array([1, 2, 3])\nb = np.array([4, 5, 6])\n\n# Operaciones elemento a elemento\nprint(a + b)  # [5, 7, 9]\nprint(a * b)  # [4, 10, 18]\n\n# Operaciones matemáticas\nprint(np.sqrt(a))  # [1, 1.41, 1.73]\nprint(np.sum(a))   # 6\n```",
+    "videoUrl": "https://example.com/videos/python-numpy",
+    "orderNumber": 2,
+    "duration": "55 min"
+  },
+  {
+    "id": "lesson-011",
+    "courseId": "course-003",
+    "title": "Visualización con Matplotlib",
+    "content": "# Matplotlib\n\nMatplotlib es la biblioteca estándar para visualización en Python.\n\n## Gráficos básicos\n\n```python\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\n\nplt.figure(figsize=(10, 6))\nplt.plot(x, y, label='sin(x)')\nplt.title('Función Seno')\nplt.xlabel('x')\nplt.ylabel('y')\nplt.legend()\nplt.grid(True)\nplt.show()\n```\n\n## Tipos de gráficos\n\n```python\n# Gráfico de barras\nplt.bar(['A', 'B', 'C'], [10, 20, 15])\n\n# Histograma\nplt.hist(data, bins=30)\n\n# Scatter plot\nplt.scatter(x, y, c=colors, s=sizes)\n```",
+    "videoUrl": "https://example.com/videos/python-matplotlib",
+    "orderNumber": 3,
+    "duration": "50 min"
+  },
+  {
+    "id": "lesson-012",
+    "courseId": "course-003",
+    "title": "Machine Learning con Scikit-learn",
+    "content": "# Scikit-learn\n\nScikit-learn es la biblioteca más popular para machine learning en Python.\n\n## Flujo de trabajo típico\n\n```python\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.metrics import accuracy_score\n\n# Dividir datos\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n\n# Entrenar modelo\nmodel = LogisticRegression()\nmodel.fit(X_train, y_train)\n\n# Predecir\npredictions = model.predict(X_test)\n\n# Evaluar\naccuracy = accuracy_score(y_test, predictions)\nprint(f'Precisión: {accuracy:.2f}')\n```\n\n## Algoritmos comunes\n\n- Regresión lineal/logística\n- Random Forest\n- SVM\n- K-Nearest Neighbors",
+    "videoUrl": "https://example.com/videos/python-sklearn",
+    "orderNumber": 4,
+    "duration": "80 min"
+  }
+]

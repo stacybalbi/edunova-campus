@@ -1,0 +1,170 @@
+[
+  {
+    "id": "option-001",
+    "questionId": "question-001",
+    "text": "Una extensión de JavaScript para escribir HTML dentro de JS",
+    "isCorrect": true
+  },
+  {
+    "id": "option-002",
+    "questionId": "question-001",
+    "text": "Un framework CSS",
+    "isCorrect": false
+  },
+  {
+    "id": "option-003",
+    "questionId": "question-001",
+    "text": "Un gestor de paquetes",
+    "isCorrect": false
+  },
+  {
+    "id": "option-004",
+    "questionId": "question-001",
+    "text": "Un sistema de base de datos",
+    "isCorrect": false
+  },
+  {
+    "id": "option-005",
+    "questionId": "question-002",
+    "text": "Verdadero",
+    "isCorrect": true
+  },
+  {
+    "id": "option-006",
+    "questionId": "question-002",
+    "text": "Falso",
+    "isCorrect": false
+  },
+  {
+    "id": "option-007",
+    "questionId": "question-003",
+    "text": "A través de props",
+    "isCorrect": true
+  },
+  {
+    "id": "option-008",
+    "questionId": "question-003",
+    "text": "Usando variables globales",
+    "isCorrect": false
+  },
+  {
+    "id": "option-009",
+    "questionId": "question-003",
+    "text": "Con localStorage",
+    "isCorrect": false
+  },
+  {
+    "id": "option-010",
+    "questionId": "question-003",
+    "text": "Mediante cookies",
+    "isCorrect": false
+  },
+  {
+    "id": "option-011",
+    "questionId": "question-004",
+    "text": "useState",
+    "isCorrect": true
+  },
+  {
+    "id": "option-012",
+    "questionId": "question-004",
+    "text": "useReducer",
+    "isCorrect": false
+  },
+  {
+    "id": "option-013",
+    "questionId": "question-004",
+    "text": "useContext",
+    "isCorrect": false
+  },
+  {
+    "id": "option-014",
+    "questionId": "question-004",
+    "text": "useMemo",
+    "isCorrect": false
+  },
+  {
+    "id": "option-015",
+    "questionId": "question-005",
+    "text": "Verdadero",
+    "isCorrect": true
+  },
+  {
+    "id": "option-016",
+    "questionId": "question-005",
+    "text": "Falso",
+    "isCorrect": false
+  },
+  {
+    "id": "option-017",
+    "questionId": "question-006",
+    "text": "Partial<T>",
+    "isCorrect": true
+  },
+  {
+    "id": "option-018",
+    "questionId": "question-006",
+    "text": "Required<T>",
+    "isCorrect": false
+  },
+  {
+    "id": "option-019",
+    "questionId": "question-006",
+    "text": "Pick<T, K>",
+    "isCorrect": false
+  },
+  {
+    "id": "option-020",
+    "questionId": "question-006",
+    "text": "Omit<T, K>",
+    "isCorrect": false
+  },
+  {
+    "id": "option-021",
+    "questionId": "question-007",
+    "text": "Verdadero",
+    "isCorrect": false
+  },
+  {
+    "id": "option-022",
+    "questionId": "question-007",
+    "text": "Falso",
+    "isCorrect": true
+  },
+  {
+    "id": "option-023",
+    "questionId": "question-008",
+    "text": "Pandas",
+    "isCorrect": true
+  },
+  {
+    "id": "option-024",
+    "questionId": "question-008",
+    "text": "NumPy",
+    "isCorrect": false
+  },
+  {
+    "id": "option-025",
+    "questionId": "question-008",
+    "text": "Matplotlib",
+    "isCorrect": false
+  },
+  {
+    "id": "option-026",
+    "questionId": "question-008",
+    "text": "Scikit-learn",
+    "isCorrect": false
+  },
+  {
+    "id": "option-027",
+    "questionId": "question-009",
+    "text": "Verdadero",
+    "isCorrect": true
+  },
+  {
+    "id": "option-028",
+    "questionId": "question-009",
+    "text": "Falso",
+    "isCorrect": false
+  }
+]

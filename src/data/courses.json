@@ -1,0 +1,90 @@
+[
+  {
+    "id": "course-001",
+    "title": "Introducción a React",
+    "description": "Aprende los fundamentos de React desde cero. Construye aplicaciones web modernas con componentes, hooks y estado.",
+    "category": "Desarrollo Web",
+    "teacherId": "user-002",
+    "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800",
+    "duration": "20 horas",
+    "level": "Beginner",
+    "createdAt": "2024-01-20T00:00:00Z"
+  },
+  {
+    "id": "course-002",
+    "title": "TypeScript Avanzado",
+    "description": "Domina TypeScript con tipos avanzados, genéricos, decoradores y patrones de diseño para código más robusto.",
+    "category": "Desarrollo Web",
+    "teacherId": "user-002",
+    "thumbnail": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800",
+    "duration": "15 horas",
+    "level": "Advanced",
+    "createdAt": "2024-02-10T00:00:00Z"
+  },
+  {
+    "id": "course-003",
+    "title": "Python para Data Science",
+    "description": "Aprende Python aplicado a ciencia de datos: pandas, numpy, matplotlib y machine learning básico.",
+    "category": "Data Science",
+    "teacherId": "user-003",
+    "thumbnail": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800",
+    "duration": "30 horas",
+    "level": "Intermediate",
+    "createdAt": "2024-02-15T00:00:00Z"
+  },
+  {
+    "id": "course-004",
+    "title": "Diseño UX/UI Profesional",
+    "description": "Diseña interfaces excepcionales. Aprende principios de UX, Figma, prototipado y sistemas de diseño.",
+    "category": "Diseño",
+    "teacherId": "user-003",
+    "thumbnail": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800",
+    "duration": "25 horas",
+    "level": "Beginner",
+    "createdAt": "2024-03-01T00:00:00Z"
+  },
+  {
+    "id": "course-005",
+    "title": "Node.js y Express",
+    "description": "Construye APIs RESTful robustas con Node.js, Express, autenticación JWT y bases de datos.",
+    "category": "Desarrollo Web",
+    "teacherId": "user-002",
+    "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
+    "duration": "22 horas",
+    "level": "Intermediate",
+    "createdAt": "2024-03-10T00:00:00Z"
+  },
+  {
+    "id": "course-006",
+    "title": "Marketing Digital",
+    "description": "Estrategias de marketing digital: SEO, SEM, redes sociales, email marketing y analítica web.",
+    "category": "Marketing",
+    "teacherId": "user-003",
+    "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800",
+    "duration": "18 horas",
+    "level": "Beginner",
+    "createdAt": "2024-03-20T00:00:00Z"
+  },
+  {
+    "id": "course-007",
+    "title": "SQL y Bases de Datos",
+    "description": "Domina SQL desde consultas básicas hasta optimización avanzada, índices y diseño de esquemas.",
+    "category": "Data Science",
+    "teacherId": "user-002",
+    "thumbnail": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800",
+    "duration": "16 horas",
+    "level": "Beginner",
+    "createdAt": "2024-04-01T00:00:00Z"
+  },
+  {
+    "id": "course-008",
+    "title": "DevOps Fundamentals",
+    "description": "Aprende Docker, Kubernetes, CI/CD, monitoreo y mejores prácticas de infraestructura como código.",
+    "category": "DevOps",
+    "teacherId": "user-003",
+    "thumbnail": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800",
+    "duration": "28 horas",
+    "level": "Advanced",
+    "createdAt": "2024-04-15T00:00:00Z"
+  }
+]
