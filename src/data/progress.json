@@ -1,0 +1,50 @@
+[
+  {
+    "id": "progress-001",
+    "studentId": "user-004",
+    "courseId": "course-001",
+    "completedLessonIds": ["lesson-001", "lesson-002", "lesson-003"],
+    "percent": 75,
+    "lastAccessedAt": "2024-04-20T10:00:00Z"
+  },
+  {
+    "id": "progress-002",
+    "studentId": "user-004",
+    "courseId": "course-003",
+    "completedLessonIds": ["lesson-009"],
+    "percent": 25,
+    "lastAccessedAt": "2024-04-18T14:30:00Z"
+  },
+  {
+    "id": "progress-003",
+    "studentId": "user-004",
+    "courseId": "course-004",
+    "completedLessonIds": [],
+    "percent": 0,
+    "lastAccessedAt": "2024-04-15T09:00:00Z"
+  },
+  {
+    "id": "progress-004",
+    "studentId": "user-005",
+    "courseId": "course-001",
+    "completedLessonIds": ["lesson-001", "lesson-002"],
+    "percent": 50,
+    "lastAccessedAt": "2024-04-19T11:00:00Z"
+  },
+  {
+    "id": "progress-005",
+    "studentId": "user-005",
+    "courseId": "course-002",
+    "completedLessonIds": ["lesson-005", "lesson-006", "lesson-007", "lesson-008"],
+    "percent": 100,
+    "lastAccessedAt": "2024-04-17T16:00:00Z"
+  },
+  {
+    "id": "progress-006",
+    "studentId": "user-005",
+    "courseId": "course-005",
+    "completedLessonIds": [],
+    "percent": 0,
+    "lastAccessedAt": "2024-04-10T08:00:00Z"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "quiz-001",
+    "courseId": "course-001",
+    "title": "Fundamentos de React",
+    "description": "Evalúa tus conocimientos sobre los conceptos básicos de React",
+    "timeLimit": 30,
+    "createdAt": "2024-02-01T00:00:00Z"
+  },
+  {
+    "id": "quiz-002",
+    "courseId": "course-001",
+    "title": "Hooks en React",
+    "description": "Prueba tus habilidades con useState y useEffect",
+    "timeLimit": 20,
+    "createdAt": "2024-02-15T00:00:00Z"
+  },
+  {
+    "id": "quiz-003",
+    "courseId": "course-002",
+    "title": "Tipos en TypeScript",
+    "description": "Evaluación sobre tipos avanzados y genéricos",
+    "timeLimit": 25,
+    "createdAt": "2024-03-01T00:00:00Z"
+  },
+  {
+    "id": "quiz-004",
+    "courseId": "course-003",
+    "title": "Python y Pandas",
+    "description": "Evaluación sobre manipulación de datos con Pandas",
+    "timeLimit": 30,
+    "createdAt": "2024-03-15T00:00:00Z"
+  }
+]

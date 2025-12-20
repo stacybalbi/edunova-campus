@@ -1,0 +1,72 @@
+[
+  {
+    "id": "submission-001",
+    "quizId": "quiz-001",
+    "studentId": "user-004",
+    "score": 80,
+    "maxScore": 100,
+    "submittedAt": "2024-03-10T14:30:00Z",
+    "answers": [
+      {
+        "questionId": "question-001",
+        "selectedOptionId": "option-001",
+        "isCorrect": true
+      },
+      {
+        "questionId": "question-002",
+        "selectedOptionId": "option-005",
+        "isCorrect": true
+      },
+      {
+        "questionId": "question-003",
+        "selectedOptionId": "option-008",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "submission-002",
+    "quizId": "quiz-002",
+    "studentId": "user-004",
+    "score": 100,
+    "maxScore": 100,
+    "submittedAt": "2024-03-15T10:00:00Z",
+    "answers": [
+      {
+        "questionId": "question-004",
+        "selectedOptionId": "option-011",
+        "isCorrect": true
+      },
+      {
+        "questionId": "question-005",
+        "selectedOptionId": "option-015",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "submission-003",
+    "quizId": "quiz-001",
+    "studentId": "user-005",
+    "score": 60,
+    "maxScore": 100,
+    "submittedAt": "2024-04-01T16:45:00Z",
+    "answers": [
+      {
+        "questionId": "question-001",
+        "selectedOptionId": "option-002",
+        "isCorrect": false
+      },
+      {
+        "questionId": "question-002",
+        "selectedOptionId": "option-005",
+        "isCorrect": true
+      },
+      {
+        "questionId": "question-003",
+        "selectedOptionId": "option-007",
+        "isCorrect": true
+      }
+    ]
+  }
+]

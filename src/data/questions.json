@@ -1,0 +1,65 @@
+[
+  {
+    "id": "question-001",
+    "quizId": "quiz-001",
+    "text": "¿Qué es JSX en React?",
+    "type": "multiple_choice",
+    "points": 10
+  },
+  {
+    "id": "question-002",
+    "quizId": "quiz-001",
+    "text": "¿Los componentes de React pueden retornar múltiples elementos sin un contenedor?",
+    "type": "true_false",
+    "points": 10
+  },
+  {
+    "id": "question-003",
+    "quizId": "quiz-001",
+    "text": "¿Cuál es la forma correcta de pasar datos de padre a hijo en React?",
+    "type": "multiple_choice",
+    "points": 10
+  },
+  {
+    "id": "question-004",
+    "quizId": "quiz-002",
+    "text": "¿Qué hook se usa para manejar estado local en un componente funcional?",
+    "type": "multiple_choice",
+    "points": 10
+  },
+  {
+    "id": "question-005",
+    "quizId": "quiz-002",
+    "text": "useEffect se ejecuta después de cada render por defecto",
+    "type": "true_false",
+    "points": 10
+  },
+  {
+    "id": "question-006",
+    "quizId": "quiz-003",
+    "text": "¿Qué utility type hace todas las propiedades opcionales?",
+    "type": "multiple_choice",
+    "points": 10
+  },
+  {
+    "id": "question-007",
+    "quizId": "quiz-003",
+    "text": "Los genéricos en TypeScript solo funcionan con funciones",
+    "type": "true_false",
+    "points": 10
+  },
+  {
+    "id": "question-008",
+    "quizId": "quiz-004",
+    "text": "¿Qué biblioteca se usa para crear DataFrames en Python?",
+    "type": "multiple_choice",
+    "points": 10
+  },
+  {
+    "id": "question-009",
+    "quizId": "quiz-004",
+    "text": "NumPy permite operaciones vectorizadas sobre arrays",
+    "type": "true_false",
+    "points": 10
+  }
+]

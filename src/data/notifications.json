@@ -1,0 +1,38 @@
+[
+  {
+    "id": "notification-001",
+    "userId": "user-004",
+    "title": "¡Nuevo curso disponible!",
+    "message": "Se ha publicado el curso 'DevOps Fundamentals'. ¡Inscríbete ahora!",
+    "type": "info",
+    "read": false,
+    "createdAt": "2024-04-15T10:00:00Z"
+  },
+  {
+    "id": "notification-002",
+    "userId": "user-004",
+    "title": "Quiz completado",
+    "message": "Has completado el quiz 'Hooks en React' con 100% de aciertos. ¡Excelente!",
+    "type": "success",
+    "read": true,
+    "createdAt": "2024-03-15T10:05:00Z"
+  },
+  {
+    "id": "notification-003",
+    "userId": "user-004",
+    "title": "Recordatorio de lección",
+    "message": "No has accedido al curso 'Diseño UX/UI Profesional' en 5 días.",
+    "type": "warning",
+    "read": false,
+    "createdAt": "2024-04-20T08:00:00Z"
+  },
+  {
+    "id": "notification-004",
+    "userId": "user-005",
+    "title": "¡Felicidades!",
+    "message": "Has completado el 100% del curso 'TypeScript Avanzado'.",
+    "type": "success",
+    "read": false,
+    "createdAt": "2024-04-17T16:05:00Z"
+  }
+]
