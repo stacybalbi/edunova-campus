@@ -42,7 +42,7 @@ const teacherNavItems: NavItem[] = [
 const adminNavItems: NavItem[] = [
   { title: 'Administración', href: '/admin', icon: ShieldCheck, roles: ['ADMIN'] },
   { title: 'Usuarios', href: '/admin/users', icon: Users, roles: ['ADMIN'] },
-  { title: 'Todos los Cursos', href: '/admin/courses', icon: BookOpen, roles: ['ADMIN'] },
+  { title: 'Gestión Cursos', href: '/admin/courses/manage', icon: BookOpen, roles: ['ADMIN'] },
 ];
 
 export function AppSidebar() {
