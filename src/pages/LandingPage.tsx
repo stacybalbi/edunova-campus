@@ -62,7 +62,7 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="py-8 border-t">
         <div className="container text-center text-muted-foreground">
-          <p>© 2024 EduNova LMS. Demo de Learning Management System.</p>
+          <p>© 2025 EduNova LMS. Demo de Learning Management System.</p>
         </div>
       </footer>
     </div>
