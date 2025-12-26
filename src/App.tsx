@@ -24,6 +24,8 @@ import AdminCoursesPage from "@/pages/admin/AdminCoursesPage";
 import AdminCoursesManagePage from "@/pages/admin/AdminCoursesManagePage";
 import CourseManagePage from "@/pages/admin/CourseManagePage";
 import TeacherCoursesPage from "@/pages/teacher/TeacherCoursesPage";
+import UIShowcasePage from "@/pages/UIShowcasePage";
+import UserManualPage from "@/pages/UserManualPage";
 import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +42,8 @@ const App = () => (
             <Route path="/" element={<LandingPage />} />
             <Route path="/login" element={<PublicRoute><LoginPage /></PublicRoute>} />
             <Route path="/register" element={<PublicRoute><RegisterPage /></PublicRoute>} />
+            <Route path="/ui-showcase" element={<UIShowcasePage />} />
+            <Route path="/user-manual" element={<UserManualPage />} />
 
             {/* Protected routes with layout */}
             <Route element={<ProtectedRoute><MainLayout /></ProtectedRoute>}>
